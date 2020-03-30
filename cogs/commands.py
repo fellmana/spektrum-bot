@@ -32,7 +32,7 @@ class Commands(commands.Cog):
     @commands.command(name='inbjudan', help='Skapa en tillfällig inbjudan')
     async def _create_invite(self, ctx):
         link = await ctx.channel.create_invite(max_age=300)
-        await ctx.send(f'Här är en inbjudan till servern: {link}"')
+        await ctx.send(f'Här är en inbjudan till servern: {link}')
 
 def setup(bot):
     bot.add_cog(Commands(bot))

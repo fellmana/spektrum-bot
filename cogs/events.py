@@ -27,7 +27,7 @@ class Events(commands.Cog):
                 await message.delete()
 
         if 'grattis' in msg:
-            await message.channel.send('Grattis! 🎈🎉')
+            await message.channel.send('Grattis! 🎈🎉', tts=True)
 
         if 'eif' in msg:
             await message.add_reaction('🏆')
