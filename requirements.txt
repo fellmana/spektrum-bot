@@ -2,3 +2,6 @@ discord
 python-dotenv
 BeautifulSoup4
 requests
+youtube_dl
+PyNaCl
+asyncio

@@ -18,7 +18,8 @@ def get_prefix(bot, message):
 extensions = ['cogs.events',
               'cogs.commands',
               'cogs.greetings',
-              'cogs.svammel']
+              'cogs.svammel',
+              'cogs.music']
 
 bot = commands.Bot(command_prefix=get_prefix, description='Spektrum Discord Bot 🤖')
 
