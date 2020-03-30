@@ -16,6 +16,7 @@ def get_prefix(bot, message):
     return commands.when_mentioned_or(*prefixes)(bot, message)
 
 extensions = ['cogs.events',
+              'cogs.commands',
               'cogs.greetings',
               'cogs.svammel']
 

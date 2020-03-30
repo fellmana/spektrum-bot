@@ -12,8 +12,8 @@ class Greetings(commands.Cog):
         if channel is not None:
             await channel.send(f'Välkommen {member.mention} 🤙')
 
-    @commands.command()
-    async def hello(self, ctx, *, member: discord.Member = None):
+    @commands.command(name='hej', help='Hej på dej')
+    async def _hello(self, ctx, *, member: discord.Member = None):
         """Says hello"""
         member = member or ctx.author
         if self._last_member is None or self._last_member.id != member.id:
