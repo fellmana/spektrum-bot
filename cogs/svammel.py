@@ -9,7 +9,7 @@ class Svammel(commands.Cog):
         self.bot = bot
         self.url = 'https://spektrum.fi/spektraklet/svammel/'
 
-    @commands.command(name='svammel', help='hmm')
+    @commands.command(name='svammel', help='Hmm ...')
     async def _svammel(self, ctx):
         page = requests.get(self.url)
         soup = BeautifulSoup(page.content, 'html.parser')

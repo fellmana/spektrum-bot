@@ -1,9 +1,5 @@
-import os
-from dotenv import load_dotenv
 from discord.ext import commands
-
-load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
+from environment import TOKEN
 
 def get_prefix(bot, message):
     """A callable prefix for the bot separeted into guilds and DM's"""
@@ -19,7 +15,8 @@ extensions = ['cogs.events',
               'cogs.commands',
               'cogs.greetings',
               'cogs.svammel',
-              'cogs.music']
+              'cogs.music',
+              'cogs.wolfram']
 
 bot = commands.Bot(command_prefix=get_prefix, description='Spektrum Discord Bot 🤖')
 

@@ -6,12 +6,12 @@ class Commands(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(name='Hello', help='Testing testing')
+    @commands.command(name='hello', help='Testing testing.')
     async def _hello_world(self, ctx):
-        response = "World!"
+        response = "world!"
         await ctx.send(response)
 
-    @commands.command(name='aslak', help='Lappländsk svenska')
+    @commands.command(name='aslak', help='Lappländsk svenska.')
     async def _say_mys(self, ctx):
         quotes = [
             "Mys mys säger filten",
@@ -21,7 +21,7 @@ class Commands(commands.Cog):
         response = random.choice(quotes)
         await ctx.send(response)
 
-    @commands.command(name='dice', help='Kasta tärning')
+    @commands.command(name='kasta', help='Kasta ett specifierat antal tärningar.')
     async def _roll(self, ctx, number_of_dice: int):
         dice = [
             str(random.choice(range(1, 7)))
