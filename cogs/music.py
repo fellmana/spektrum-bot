@@ -337,6 +337,9 @@ class Music(commands.Cog):
     async def _volume(self, ctx: commands.Context, *, volume: int):
         """Sets the volume of the player"""
 
+        if not ctx.voice_state.voice:
+            return await ctx.send('Not connected to any voice channel.')
+
         if not ctx.voice_state.is_playing:
             return await ctx.send('Nothing being played at the moment.')
 
@@ -349,6 +352,9 @@ class Music(commands.Cog):
     @commands.command(name='now', aliases=['current', 'playing'])
     async def _now(self, ctx: commands.Context):
         """Displays the currently playing song"""
+
+        if not ctx.voice_state.voice:
+            return await ctx.send('Not connected to any voice channel.')
 
         await ctx.send(embed=ctx.voice_state.current.create_embed())
 
