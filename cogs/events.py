@@ -16,17 +16,21 @@ class Events(commands.Cog):
         if message.author == self.bot.user:
             return
         
+        msg = message.content.lower()
+
         for word in SKETCHY:
-            if word in message.content.lower():
+            if word in msg:
                 await message.add_reaction('👀')
         
         for word in BAD:
-            if word in message.content.lower():
+            if word in msg:
                 await message.delete()
 
-        if 'grattis' in message.content.lower():
+        if 'grattis' in msg:
             await message.channel.send('Grattis! 🎈🎉')
 
+        if 'eif' in msg:
+            await message.add_reaction('🏆')
     
 
 def setup(bot):
