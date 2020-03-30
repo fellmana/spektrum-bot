@@ -1,16 +1,24 @@
-.. Spektrum Bot documentation master file, created by
-   sphinx-quickstart on Mon Mar 30 19:01:12 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
-Welcome to Spektrum Bot's documentation!
-========================================
+Use Spektrum Bot
+================
+
+`Discord Link <https://discordapp.com/api/oauth2/authorize?client_id=693862590866128937&permissions=66583873&scope=bot/>`_
+
+Readme
+======
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 4
 
+   readme
 
+Documentation
+=============
+
+.. toctree::
+   :maxdepth: 10
+
+   _modules/modules
 
 Indices and tables
 ==================

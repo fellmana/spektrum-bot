@@ -1,5 +1,5 @@
 from discord.ext import commands
-from utils.censoring import BAD, SKETCHY
+from utils.censoring import get_bad_words, get_sketchy_words
 
 class Events(commands.Cog):
     def __init__(self, bot):
@@ -18,11 +18,11 @@ class Events(commands.Cog):
         
         msg = message.content.lower()
 
-        for word in SKETCHY:
+        for word in get_sketchy_words():
             if word in msg:
                 await message.add_reaction('👀')
         
-        for word in BAD:
+        for word in get_bad_words():
             if word in msg:
                 await message.delete()
 

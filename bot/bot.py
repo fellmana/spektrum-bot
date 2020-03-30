@@ -5,7 +5,7 @@ The core module of my example project
 """
 
 from discord.ext import commands
-from utils.environment import TOKEN
+from utils.environment import get_token
 
 def get_prefix(bot, message):
     """
@@ -37,4 +37,4 @@ if __name__ == '__main__':
     for extension in extensions:
         bot.load_extension(extension)
 
-bot.run(TOKEN, bot=True, reconnect=True)
+    bot.run(get_token(), bot=True, reconnect=True)

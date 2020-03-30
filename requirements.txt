@@ -6,5 +6,3 @@ youtube_dl
 PyNaCl
 asyncio
 wolframalpha
-sphinx
-jupyter-sphinx-theme
