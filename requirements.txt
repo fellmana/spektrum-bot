@@ -6,3 +6,4 @@ youtube_dl
 PyNaCl
 asyncio
 sphinx
+jupyter-sphinx-theme
