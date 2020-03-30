@@ -1,8 +1,21 @@
+"""
+bot.py
+====================================
+The core module of my example project
+"""
+
 from discord.ext import commands
 from utils.environment import TOKEN
 
 def get_prefix(bot, message):
-    """A callable prefix for the bot separeted into guilds and DM's"""
+    """
+    A callable prefix for the bot separeted into guilds and DM's
+
+    Parameters
+    ----------
+    your_name
+        A string indicating the name of the person.
+    """
 
     prefixes = ['spektrumiter ', '!']
 
