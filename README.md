@@ -1,6 +1,8 @@
 
 # Spektrum Discord Bot
 
+<https://hd4niel.github.io/spektrum-bot/>
+
 ## Commands
 
 ```
