@@ -15,7 +15,8 @@ def get_prefix(bot, message):
 
     return commands.when_mentioned_or(*prefixes)(bot, message)
 
-extensions = ['cogs.events']
+extensions = ['cogs.events',
+              'cogs.svammel']
 
 bot = commands.Bot(command_prefix=get_prefix, description='Spektrum Discord Bot 🤖')
 
