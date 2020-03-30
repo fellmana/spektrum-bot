@@ -5,3 +5,4 @@ requests
 youtube_dl
 PyNaCl
 asyncio
+sphinx
