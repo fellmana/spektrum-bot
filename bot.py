@@ -1,5 +1,5 @@
 from discord.ext import commands
-from environment import TOKEN
+from utils.environment import TOKEN
 
 def get_prefix(bot, message):
     """A callable prefix for the bot separeted into guilds and DM's"""

@@ -1,10 +1,7 @@
 import discord
 from discord.ext import commands
 import wolframalpha
-
-import os, sys
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from environment import APP_ID
+from utils.environment import APP_ID
 
 class WolframAlpha(commands.Cog):
     def __init__(self, bot):
