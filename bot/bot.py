@@ -33,7 +33,8 @@ extensions = ['cogs.events',
               'cogs.commands',
               'cogs.svammel',
               'cogs.music',
-              'cogs.wolfram']
+              'cogs.wolfram',
+              'cogs.sitz']
 
 bot = commands.Bot(command_prefix=get_prefix,
                    description='Spektrum Discord Bot 🤖')
