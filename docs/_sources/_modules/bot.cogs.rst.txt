@@ -20,14 +20,6 @@ bot.cogs.events module
    :undoc-members:
    :show-inheritance:
 
-bot.cogs.greetings module
--------------------------
-
-.. automodule:: bot.cogs.greetings
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 bot.cogs.music module
 ---------------------
 
@@ -36,10 +28,10 @@ bot.cogs.music module
    :undoc-members:
    :show-inheritance:
 
-bot.cogs.sing module
+bot.cogs.sitz module
 --------------------
 
-.. automodule:: bot.cogs.sing
+.. automodule:: bot.cogs.sitz
    :members:
    :undoc-members:
    :show-inheritance:
