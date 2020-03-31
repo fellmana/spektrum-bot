@@ -1,6 +1,6 @@
-import discord
 from discord.ext import commands
 import random
+
 
 class Commands(commands.Cog):
     def __init__(self, bot):
@@ -33,6 +33,7 @@ class Commands(commands.Cog):
     async def _create_invite(self, ctx):
         link = await ctx.channel.create_invite(max_age=300)
         await ctx.send(f'Här är en inbjudan till servern: {link}')
+
 
 def setup(bot):
     bot.add_cog(Commands(bot))

@@ -1,13 +1,15 @@
 
-BAD=['hoe', 'hallå', 'fidget spinner']
+BAD = ['hoe', 'hallå', 'fidget spinner']
 
-SKETCHY=['usch', 'aha', 'åland']
+SKETCHY = ['usch', 'aha', 'åland']
+
 
 def get_bad_words():
     """
     Return bad words
     """
     return BAD
+
 
 def get_sketchy_words():
     """

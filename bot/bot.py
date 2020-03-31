@@ -7,6 +7,7 @@ The core module of my example project
 from discord.ext import commands
 from utils.environment import get_token
 
+
 def get_prefix(bot, message):
     """
     A callable prefix for the bot separeted into guilds and DM's
@@ -24,6 +25,7 @@ def get_prefix(bot, message):
 
     return commands.when_mentioned_or(*prefixes)(bot, message)
 
+
 extensions = ['cogs.events',
               'cogs.commands',
               'cogs.greetings',
@@ -31,7 +33,8 @@ extensions = ['cogs.events',
               'cogs.music',
               'cogs.wolfram']
 
-bot = commands.Bot(command_prefix=get_prefix, description='Spektrum Discord Bot 🤖')
+bot = commands.Bot(command_prefix=get_prefix,
+                   description='Spektrum Discord Bot 🤖')
 
 if __name__ == '__main__':
     for extension in extensions:

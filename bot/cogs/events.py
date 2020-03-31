@@ -1,6 +1,7 @@
 from discord.ext import commands
 from utils.censoring import get_bad_words, get_sketchy_words
 
+
 class Events(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -15,13 +16,13 @@ class Events(commands.Cog):
     async def on_message(self, message):
         if message.author == self.bot.user:
             return
-        
+
         msg = message.content.lower()
 
         for word in get_sketchy_words():
             if word in msg:
                 await message.add_reaction('👀')
-        
+
         for word in get_bad_words():
             if word in msg:
                 await message.delete()
@@ -31,7 +32,7 @@ class Events(commands.Cog):
 
         if 'eif' in msg:
             await message.add_reaction('🏆')
-    
+
 
 def setup(bot):
     bot.add_cog(Events(bot))
