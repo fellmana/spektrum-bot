@@ -7,7 +7,7 @@ class Sitz(commands.Cog):
 
     @commands.command(name='hitta', help='Hitta en sång i sångboken')
     async def _find(self, ctx, *, song: str):
-        with open('utils/index.json') as f:
+        with open('bot/utils/index.json') as f:
             index = json.load(f)
         if song in index.keys():
             await ctx.send(f'{song} är på sida: {index[song]}', tts=True)
@@ -16,7 +16,7 @@ class Sitz(commands.Cog):
 
     @commands.command(name='lista', help='Lista alla sånger som börjar på en bokstav')
     async def _songs(self, ctx, *, letter: str):
-        with open('utils/index.json') as f:
+        with open('bot/utils/index.json') as f:
             index = json.load(f)
         songs = []
         for song in index.keys():
@@ -29,12 +29,12 @@ class Sitz(commands.Cog):
 
     @commands.command(name='text', help='Få texten till en sång (BETA)')
     async def _lyrics(self, ctx, *, song: str):
-        with open('utils/index.json') as f:
+        with open('bot/utils/index.json') as f:
             index = json.load(f)
 
         found = False
         lyrics = []
-        with open('utils/sangbok.txt') as f:
+        with open('bot/utils/sangbok.txt') as f:
             for line in f:
                 if song in line:
                     found = True
