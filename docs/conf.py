@@ -5,6 +5,7 @@
 # list see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+
 # -- Path setup --------------------------------------------------------------
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -33,6 +34,7 @@ release = '0.1'
 # ones.
 extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon', 'm2r']
 source_suffix = ['.rst', '.md']
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 

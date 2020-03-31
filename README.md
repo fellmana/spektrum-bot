@@ -44,11 +44,11 @@ You can also type !help category for more info on a category.
 ## Develop 💻
 
 ```bash
-python -m venv env
-source env/bin/activate
-pip install -r requirements.txt
+$ python -m venv env
+$ source env/bin/activate
+$ pip install -r requirements.txt
 ...
-deactivate
+$ deactivate
 ```
 
 ### Docker 🐋
@@ -58,12 +58,18 @@ $ docker build -t bot .
 $ docker run -it bot
 ```
 
-## Documentation 📖
+### Documentation 📖
 
 ```bash
-cd docs
-sphinx-quickstart
-sphinx-apidoc -o _modules ../bot
-make html
-xdg-open _build/html/index.html
+$ cd docs
+pip install -r requirements.txt
+$ sphinx-quickstart
+$ sphinx-apidoc -o _modules ../bot
+$ make html
+$ xdg-open _build/html/index.html
+```
+
+### Lint
+```bash
+$ autopep8 --in-place --aggressive --max-line-length 200 --recursive bot
 ```
