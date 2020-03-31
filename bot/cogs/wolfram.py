@@ -7,8 +7,7 @@ class Ruben(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(
-        name='ruben', aliases=['wolfram'], help='Sök fakta eller lös svåra matteproblem')
+    @commands.command(name='ruben', aliases=['wolfram'], help='Sök fakta eller lös svåra matteproblem')
     async def _wolfram_alpha(self, ctx, *, query: str):
         client = wolframalpha.Client(get_app_id())
 
@@ -18,7 +17,7 @@ class Ruben(commands.Cog):
             response = next(res.results).text
         else:
             response = f'Inga resultat för {query}'
-        await ctx.send(response)
+        await ctx.send(response, tts=True)
 
 
 def setup(bot):

@@ -30,7 +30,6 @@ def get_prefix(bot, message):
 
 extensions = ['cogs.events',
               'cogs.commands',
-              'cogs.greetings',
               'cogs.svammel',
               'cogs.music',
               'cogs.wolfram']
@@ -62,5 +61,12 @@ if __name__ == '__main__':
         description = 'Read about me here 📖'
         url = 'https://hd4niel.github.io/spektrum-bot'
         await ctx.send(embed=get_embed(title, description, url))
+
+    @bot.command(name='text-to-speech', help='I sometimes speak ;)')
+    async def _documentation(ctx):
+        title = 'Text to speech'
+        description = 'Activate tts on Discord 🗣️'
+        url = 'https://support.discordapp.com/hc/en-us/articles/212517297-Text-to-Speech-101'
+        await ctx.send(embed=get_embed(title, description, url))        
 
     bot.run(get_token(), bot=True, reconnect=True)

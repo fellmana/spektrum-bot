@@ -13,6 +13,12 @@ class Events(commands.Cog):
         print(f'id:\t{self.bot.user.id}')
 
     @commands.Cog.listener()
+    async def on_member_join(self, member):
+        channel = member.guild.system_channel
+        if channel is not None:
+            await channel.send(f'Välkommen {member.mention} 🤙', tts=True)
+
+    @commands.Cog.listener()
     async def on_message(self, message):
         if message.author == self.bot.user:
             return
@@ -32,6 +38,15 @@ class Events(commands.Cog):
 
         if 'eif' in msg:
             await message.add_reaction('🏆')
+
+        if 'minecraft' in msg:
+            await message.add_reaction('👾')
+
+        if 'spektrum' in msg:
+            await message.add_reaction('🌈')
+
+        if 'tack' in msg:
+            await message.channel.send('varsågod :))', tts=True)
 
 
 def setup(bot):

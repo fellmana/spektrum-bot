@@ -19,7 +19,7 @@ class Svammel(commands.Cog):
         svammel = [p.get_text() for p in paragraphs]
 
         response = random.choice(svammel)
-        await ctx.send(response)
+        await ctx.send(response, tts=True)
 
 
 def setup(bot):
