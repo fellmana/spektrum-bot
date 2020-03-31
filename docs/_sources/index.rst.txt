@@ -20,6 +20,14 @@ Documentation
 
    _modules/modules
 
+Bot is poor
+===========
+
+.. toctree::
+   :maxdepth: 4
+
+   sponsor
+
 Indices and tables
 ==================
 

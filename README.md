@@ -62,11 +62,11 @@ $ docker run -it bot
 
 ```bash
 $ cd docs
-pip install -r requirements.txt
-$ sphinx-quickstart
+$ pip install -r requirements.txt
 $ sphinx-apidoc -o _modules ../bot
 $ make html
 $ xdg-open _build/html/index.html
+$ make github
 ```
 
 ### Lint 🔍
