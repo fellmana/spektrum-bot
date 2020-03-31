@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 import random
 
+
 class Kommandon(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -39,6 +40,7 @@ class Kommandon(commands.Cog):
         else:
             await ctx.send(f'Hej {member.name}... hmm känns bekant.', tts=True)
         self._last_member = member
+
 
 def setup(bot):
     bot.add_cog(Kommandon(bot))

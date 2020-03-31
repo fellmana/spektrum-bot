@@ -8,6 +8,7 @@ import discord
 from discord.ext import commands
 from utils.environment import get_token
 
+
 def get_prefix(bot, message):
     """
     A callable prefix for the bot separeted into guilds and DM's
@@ -37,12 +38,14 @@ extensions = ['cogs.events',
 bot = commands.Bot(command_prefix=get_prefix,
                    description='Spektrum Discord Bot 🤖')
 
+
 def get_embed(title, description, url):
     embed = (discord.Embed(title=title,
                            description=description,
                            color=discord.Color.blurple())
-                    .add_field(name='url', value=url))
+             .add_field(name='url', value=url))
     return embed
+
 
 if __name__ == '__main__':
     for extension in extensions:
@@ -67,6 +70,6 @@ if __name__ == '__main__':
         title = 'Text to speech'
         description = 'Activate tts on Discord 🗣️'
         url = 'https://support.discordapp.com/hc/en-us/articles/212517297-Text-to-Speech-101'
-        await ctx.send(embed=get_embed(title, description, url))        
+        await ctx.send(embed=get_embed(title, description, url))
 
     bot.run(get_token(), bot=True, reconnect=True)
