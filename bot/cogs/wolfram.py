@@ -3,12 +3,12 @@ import wolframalpha
 from utils.environment import get_app_id
 
 
-class WolframAlpha(commands.Cog):
+class Ruben(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
     @commands.command(
-        name='wolfram', help='Sök fakta eller lös svåra matteproblem')
+        name='ruben', aliases=['wolfram'], help='Sök fakta eller lös svåra matteproblem')
     async def _wolfram_alpha(self, ctx, *, query: str):
         client = wolframalpha.Client(get_app_id())
 
@@ -22,4 +22,4 @@ class WolframAlpha(commands.Cog):
 
 
 def setup(bot):
-    bot.add_cog(WolframAlpha(bot))
+    bot.add_cog(Ruben(bot))
