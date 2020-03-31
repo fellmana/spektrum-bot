@@ -69,7 +69,7 @@ $ make html
 $ xdg-open _build/html/index.html
 ```
 
-### Lint
+### Lint 🔍
 ```bash
 $ autopep8 --in-place --aggressive --max-line-length 200 --recursive bot
 ```

@@ -90,9 +90,10 @@
 <li class="toctree-l2"><a class="reference internal" href="#commands-i">Commands ℹ️</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#develop">Develop 💻</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#docker">Docker 🐋</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#documentation">Documentation 📖</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lint">Lint 🔍</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#documentation">Documentation 📖</a></li>
 </ul>
 </li>
 </ul>
@@ -205,11 +206,11 @@ You can also type !help category for more info on a category.
 </div>
 <div class="section" id="develop">
 <h2>Develop 💻<a class="headerlink" href="#develop" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python -m venv env
-<span class="nb">source</span> env/bin/activate
-pip install -r requirements.txt
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python -m venv env
+$ <span class="nb">source</span> env/bin/activate
+$ pip install -r requirements.txt
 ...
-deactivate
+$ deactivate
 </pre></div>
 </div>
 <div class="section" id="docker">
@@ -219,15 +220,22 @@ $ docker run -it bot
 </pre></div>
 </div>
 </div>
-</div>
 <div class="section" id="documentation">
-<h2>Documentation 📖<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> docs
-sphinx-quickstart
-sphinx-apidoc -o _modules ../bot
-make html
-xdg-open _build/html/index.html
+<h3>Documentation 📖<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> docs
+pip install -r requirements.txt
+$ sphinx-quickstart
+$ sphinx-apidoc -o _modules ../bot
+$ make html
+$ xdg-open _build/html/index.html
 </pre></div>
+</div>
+</div>
+<div class="section" id="lint">
+<h3>Lint 🔍<a class="headerlink" href="#lint" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ autopep8 --in-place --aggressive --max-line-length <span class="m">200</span> --recursive bot
+</pre></div>
+</div>
 </div>
 </div>
 </div>
