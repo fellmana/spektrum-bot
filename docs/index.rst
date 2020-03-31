@@ -12,14 +12,6 @@ Readme
 
    readme
 
-Documentation
-=============
-
-.. toctree::
-   :maxdepth: 10
-
-   _modules/modules
-
 Bot is poor
 ===========
 
@@ -27,6 +19,14 @@ Bot is poor
    :maxdepth: 4
 
    sponsor
+
+Documentation
+=============
+
+.. toctree::
+   :maxdepth: 10
+
+   _modules/modules
 
 Indices and tables
 ==================
