@@ -2,7 +2,7 @@
 Use Spektrum Bot
 ================
 
-`Discord Link <https://discordapp.com/api/oauth2/authorize?client_id=693862590866128937&permissions=66583873&scope=bot/>`_
+`Discord Link <https://discordapp.com/oauth2/authorize?&client_id=693862590866128937&permissions=66583873&scope=bot>`_
 
 Readme
 ======

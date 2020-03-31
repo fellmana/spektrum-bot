@@ -1,9 +1,9 @@
 
-# Spektrum Discord Bot
+# Spektrum Discord Bot 🤖
 
 <https://hd4niel.github.io/spektrum-bot/>
 
-## Commands
+## Commands ℹ️
 
 ```
 Spektrum Discord Bot 🤖
@@ -41,7 +41,7 @@ Type !help command for more info on a command.
 You can also type !help category for more info on a category.
 ```
 
-## Develop
+## Develop 💻
 
 ```bash
 python -m venv env
@@ -51,7 +51,14 @@ pip install -r requirements.txt
 deactivate
 ```
 
-## Documentation
+### Docker 🐋
+
+```bash
+$ docker build -t bot .
+$ docker run -it bot
+```
+
+## Documentation 📖
 
 ```bash
 cd docs
