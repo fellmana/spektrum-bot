@@ -1,7 +1,7 @@
 
 BAD = ['hoe', 'hallå', 'fidget spinner']
 
-SKETCHY = ['usch', 'aha', 'åland', 'hanken']
+SKETCHY = ['hanken', 'sos', 'mapu', 'fymm', 'yeet', 'oof', 'yikes', 'tira']
 
 
 def get_bad_words():

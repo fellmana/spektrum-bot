@@ -25,13 +25,13 @@ class Events(commands.Cog):
 
         msg = message.content.lower()
 
-        for word in get_sketchy_words():
-            if word in msg:
-                await message.add_reaction('👀')
-
         for word in get_bad_words():
             if word in msg:
                 await message.delete()
+
+        for word in get_sketchy_words():
+            if word in msg:
+                await message.add_reaction('🆘')
 
         if 'grattis' in msg:
             await message.channel.send('Grattis! 🎈🎉', tts=True)
@@ -39,11 +39,17 @@ class Events(commands.Cog):
         if 'eif' in msg:
             await message.add_reaction('🏆')
 
+        if 'åland' in msg:
+            await message.add_reaction('🇦🇽')
+
         if 'minecraft' in msg:
-            await message.add_reaction('👾')
+            await message.add_reaction('🌄')
 
         if 'spektrum' in msg:
             await message.add_reaction('🌈')
+
+        if 'hype' in msg:
+            await message.add_reaction('🤩')
 
         if 'tack' in msg:
             await message.channel.send('varsågod :))', tts=True)
