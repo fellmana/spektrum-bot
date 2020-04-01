@@ -20,6 +20,14 @@ bot.cogs.events module
    :undoc-members:
    :show-inheritance:
 
+bot.cogs.memes module
+---------------------
+
+.. automodule:: bot.cogs.memes
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 bot.cogs.music module
 ---------------------
 
