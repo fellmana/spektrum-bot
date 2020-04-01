@@ -13,6 +13,14 @@ Kommandon:
   hej            Hej på dej
   inbjudan       Skapa en tillfällig inbjudan
   kasta          Kasta ett specifierat antal tärningar
+Memes:
+  cs             01100011 01110011
+  dank           420
+  fyssa          pi=3
+  gegga          60°10'15.2"N 24°57'22.6"E
+  kemist         H2O + H2O = H4O
+  mafs           1+2+3+...=-1/12
+  meme           Random
 Music:
   join           Joins a voice channel
   leave          Clears the queue and leaves the voice channel
