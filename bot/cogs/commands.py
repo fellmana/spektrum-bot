@@ -25,6 +25,31 @@ class Kommandon(commands.Cog):
             for _ in range(number_of_dice)
         ]
         await ctx.send(', '.join(dice), tts=True)
+        pair =  False
+        three = False
+        won = False
+        for die in dice:
+            n = dice.count(die)
+            if n > 5 and not won:
+                won = True
+                await ctx.message.add_reaction('🔥')
+            elif n == 5 and len(dice) == 5 and not won:
+                won = True
+                await ctx.message.add_reaction('🏆')
+                y = ':regional_indicator_y:'
+                a = ':regional_indicator_a:'
+                t = ':regional_indicator_t:'
+                z = ':regional_indicator_z:'
+                await ctx.send(f'{y} {a} {t} {z} {y}', tts=True)
+            elif n == 4:
+                await ctx.message.add_reaction('🎀')
+            if n == 3:
+                three = True
+                await ctx.message.add_reaction('👏')
+            if n == 2:
+                pair = True
+        if pair and three:
+            await ctx.message.add_reaction('🏠')
 
     @commands.command(name='inbjudan', help='Skapa en tillfällig inbjudan')
     async def _create_invite(self, ctx):
