@@ -512,10 +512,10 @@ class Music(commands.Cog):
             raise commands.CommandError(
                 'You are not connected to any voice channel.')
 
-        if ctx.voice_client:
-            if ctx.voice_client.channel != ctx.author.voice.channel:
-                raise commands.CommandError(
-                    'Bot is already in a voice channel.')
+        #if ctx.voice_client:
+        #    if ctx.voice_client.channel != ctx.author.voice.channel:
+        #        raise commands.CommandError(
+        #            'Bot is already in a voice channel.')
 
 
 def setup(bot):
