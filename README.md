@@ -69,6 +69,8 @@ $ deactivate
 ```bash
 $ docker build -t bot .
 $ docker run -it bot
+$ heroku container:push worker
+$ heroku container:release worker
 ```
 
 ### Documentation 📖
