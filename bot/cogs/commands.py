@@ -13,7 +13,12 @@ class Kommandon(commands.Cog):
         quotes = [
             "Mys mys säger filten",
             "Prassel prassel säger pressun",
-            "Voflor"
+            "Voflor",
+            "Glassepaus",
+            "Glaffepaus",
+            "God morgon",
+            "Tundercash",
+            "Kuuleppa poka"
         ]
         response = random.choice(quotes)
         await ctx.send(response, tts=True)
