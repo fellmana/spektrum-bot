@@ -18,7 +18,8 @@ class Kommandon(commands.Cog):
             "Glaffepaus",
             "God morgon",
             "Tundercash",
-            "Kuuleppa poka"
+            "Kuuleppa poka",
+            "ouptutten"
         ]
         response = random.choice(quotes)
         await ctx.send(response, tts=True)
